@@ -1,0 +1,1121 @@
+{
+  "studentProfile": {
+    "id": "stu-001",
+    "name": "Sakshi Sharma",
+    "email": "sakshi.sharma@tech.edu.in",
+    "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&auto=format&fit=crop&q=80",
+    "college": "National Institute of Technology",
+    "degree": "B.Tech in Computer Science & Engineering",
+    "department": "Computer Science",
+    "year": "Final Year (2026)",
+    "cgpa": 8.84,
+    "headline": "Aspiring Full-Stack & Distributed Systems Engineer | Open Source Contributor",
+    "bio": "Passionate computer science senior with hands-on experience in modern React, Go microservices, Cloud infrastructure, and AI engineering. Actively seeking a 6-month industry internship / full-time software engineering role.",
+    "location": "Bangalore / New Delhi, India",
+    "linkedin": "https://linkedin.com/in/sakshi-sharma-sih",
+    "github": "https://github.com/sakshi-dev-sih",
+    "portfolioUrl": "https://ayursetu.gov.in/p/sakshi-sharma",
+    "verifiedBadges": [
+      "Top 5% Assessment Score",
+      "Verified Skill Benchmark",
+      "AICTE Certified Intern",
+      "Hackathon Finalist"
+    ],
+    "skills": [
+      {
+        "name": "React / Next.js",
+        "level": 90,
+        "verified": true
+      },
+      {
+        "name": "Node.js & Go",
+        "level": 82,
+        "verified": true
+      },
+      {
+        "name": "System Design & Distributed Systems",
+        "level": 68,
+        "verified": true
+      },
+      {
+        "name": "Docker & Kubernetes",
+        "level": 64,
+        "verified": false
+      },
+      {
+        "name": "Data Structures & Algorithms",
+        "level": 88,
+        "verified": true
+      },
+      {
+        "name": "Cloud (AWS / GCP)",
+        "level": 60,
+        "verified": false
+      },
+      {
+        "name": "LLM Prompt & RAG Systems",
+        "level": 75,
+        "verified": true
+      },
+      {
+        "name": "Agile & Team Leadership",
+        "level": 85,
+        "verified": true
+      }
+    ],
+    "radarScores": [
+      {
+        "category": "Full-Stack Dev",
+        "student": 88,
+        "benchmark": 85,
+        "fullMark": 100
+      },
+      {
+        "category": "DSA & Algorithms",
+        "student": 86,
+        "benchmark": 80,
+        "fullMark": 100
+      },
+      {
+        "category": "System Architecture",
+        "student": 62,
+        "benchmark": 85,
+        "fullMark": 100
+      },
+      {
+        "category": "Cloud & DevOps",
+        "student": 58,
+        "benchmark": 80,
+        "fullMark": 100
+      },
+      {
+        "category": "AI & Data Eng.",
+        "student": 76,
+        "benchmark": 72,
+        "fullMark": 100
+      },
+      {
+        "category": "Soft Skills & Collab",
+        "student": 85,
+        "benchmark": 75,
+        "fullMark": 100
+      }
+    ],
+    "overallReadiness": 76,
+    "completedAssessmentsCount": 3,
+    "certifications": [
+      {
+        "id": "cert-1",
+        "title": "AWS Certified Cloud Practitioner",
+        "issuer": "Amazon Web Services",
+        "issueDate": "Jan 2026",
+        "credentialId": "AWS-99428-A4B",
+        "verified": true
+      },
+      {
+        "id": "cert-2",
+        "title": "Meta Front-End Developer Professional Certificate",
+        "issuer": "Meta via Coursera",
+        "issueDate": "Nov 2025",
+        "credentialId": "META-FE-7729",
+        "verified": true
+      },
+      {
+        "id": "cert-3",
+        "title": "Distributed Systems & Microservices Masterclass",
+        "issuer": "Industry Academy & IIT Madras",
+        "issueDate": "Feb 2026",
+        "credentialId": "IITM-IND-2026-88",
+        "verified": true
+      }
+    ],
+    "projects": [
+      {
+        "id": "proj-1",
+        "title": "CloudMesh: Microservices Observability Platform",
+        "description": "Distributed tracing and anomaly detection system for containerized microservices handling 10k+ requests/sec using Go, OpenTelemetry, and ClickHouse.",
+        "tags": [
+          "Go",
+          "Kubernetes",
+          "OpenTelemetry",
+          "React",
+          "Tailwind"
+        ],
+        "githubUrl": "https://github.com/sakshi-dev-sih/cloudmesh",
+        "liveUrl": "https://cloudmesh-demo.internal",
+        "stars": 142
+      },
+      {
+        "id": "proj-2",
+        "title": "DocuMind RAG: Enterprise Knowledge Synthesizer",
+        "description": "Multi-modal document question answering system using LangChain, pgvector, and FastAPI with zero-shot hallucination mitigation.",
+        "tags": [
+          "Python",
+          "FastAPI",
+          "PostgreSQL",
+          "LangChain",
+          "Llama-3"
+        ],
+        "githubUrl": "https://github.com/sakshi-dev-sih/documind-rag",
+        "liveUrl": "https://documind.internal",
+        "stars": 89
+      }
+    ],
+    "internshipHistory": [
+      {
+        "id": "intern-1",
+        "role": "Full Stack Engineering Intern",
+        "company": "Razorpay Payments",
+        "duration": "May 2025 - Jul 2025 (3 mos)",
+        "description": "Built merchant analytics dashboard components in React, reducing load times by 38% and wrote webhook retry pipeline in Node.js.",
+        "verifiedByCompany": true
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "id": "job-1",
+      "title": "Cloud Platform & Distributed Systems Intern",
+      "company": "Cisco Systems",
+      "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+      "location": "Bangalore / Remote",
+      "type": "Internship",
+      "workplace": "Hybrid",
+      "stipendOrSalary": "₹75,000 / month",
+      "duration": "6 Months (PPO Potential)",
+      "postedDate": "2 days ago",
+      "deadline": "15 March 2026",
+      "applicantsCount": 64,
+      "featured": true,
+      "description": "Join Cisco Cloud Platform Engineering team to build multi-tenant Kubernetes control planes, service meshes, and observability pipelines handling petabytes of telemetry data.",
+      "responsibilities": [
+        "Design and implement high-performance Go microservices",
+        "Optimize Kubernetes CRDs and custom controllers for automated autoscaling",
+        "Benchmark latency and write unit/integration tests with 90%+ coverage",
+        "Collaborate with university researchers on telemetry algorithms"
+      ],
+      "requiredSkills": [
+        {
+          "name": "System Design",
+          "weight": 35
+        },
+        {
+          "name": "Go / Node.js",
+          "weight": 25
+        },
+        {
+          "name": "Kubernetes & Docker",
+          "weight": 25
+        },
+        {
+          "name": "Data Structures & Algorithms",
+          "weight": 15
+        }
+      ],
+      "preferredSkills": [
+        "gRPC",
+        "Prometheus",
+        "eBPF",
+        "Terraform"
+      ],
+      "eligibility": "B.Tech/M.Tech CSE/IT, Graduating in 2026 or 2027, CGPA 7.5+"
+    },
+    {
+      "id": "job-2",
+      "title": "AI & Full-Stack Solutions Engineer",
+      "company": "NVIDIA AI Innovation Labs",
+      "companyLogo": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=120&auto=format&fit=crop&q=80",
+      "location": "Pune / Hyderabad, India",
+      "type": "Internship",
+      "workplace": "On-Site",
+      "stipendOrSalary": "₹85,000 / month",
+      "duration": "6 Months",
+      "postedDate": "1 day ago",
+      "deadline": "20 March 2026",
+      "applicantsCount": 112,
+      "featured": true,
+      "description": "Work alongside NVIDIA researchers and university faculty to develop next-generation enterprise RAG platforms, fine-tuning infrastructure, and modern visualization frontends.",
+      "responsibilities": [
+        "Develop interactive Next.js / TypeScript dashboards for LLM benchmarking",
+        "Implement RAG pipelines using TensorRT-LLM and Vector Databases",
+        "Profile memory bottlenecks on GPU clusters",
+        "Co-author research technical briefs for academic partners"
+      ],
+      "requiredSkills": [
+        {
+          "name": "React / Next.js",
+          "weight": 30
+        },
+        {
+          "name": "AI & Data Eng.",
+          "weight": 35
+        },
+        {
+          "name": "Python & FastAPI",
+          "weight": 20
+        },
+        {
+          "name": "DSA & Algorithms",
+          "weight": 15
+        }
+      ],
+      "preferredSkills": [
+        "LangChain",
+        "CUDA basics",
+        "PyTorch",
+        "TailwindCSS"
+      ],
+      "eligibility": "All Engineering disciplines with solid software foundation"
+    },
+    {
+      "id": "job-3",
+      "title": "Fintech Backend & Systems Apprentice",
+      "company": "Razorpay",
+      "companyLogo": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=120&auto=format&fit=crop&q=80",
+      "location": "Bangalore, India",
+      "type": "Apprenticeship",
+      "workplace": "Hybrid",
+      "stipendOrSalary": "₹60,000 / month",
+      "duration": "1 Year",
+      "postedDate": "4 days ago",
+      "deadline": "25 March 2026",
+      "applicantsCount": 48,
+      "featured": false,
+      "description": "Gain intensive industry training in mission-critical financial transaction processing, idempotent API design, and distributed database sharding.",
+      "responsibilities": [
+        "Build resilient settlement and reconciliation services",
+        "Implement circuit-breaker patterns for banking gateways",
+        "Perform database index optimizations on PostgreSQL clusters"
+      ],
+      "requiredSkills": [
+        {
+          "name": "Data Structures & Algorithms",
+          "weight": 35
+        },
+        {
+          "name": "Full-Stack Dev",
+          "weight": 30
+        },
+        {
+          "name": "System Architecture",
+          "weight": 25
+        },
+        {
+          "name": "Soft Skills & Collab",
+          "weight": 10
+        }
+      ],
+      "preferredSkills": [
+        "Kafka",
+        "Redis",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "eligibility": "Pre-final and Final year students"
+    },
+    {
+      "id": "job-4",
+      "title": "Autonomous Systems & Embedded Software Intern",
+      "company": "Tata Motors EV Tech Hub",
+      "companyLogo": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=120&auto=format&fit=crop&q=80",
+      "location": "Pune, India",
+      "type": "Live Project",
+      "workplace": "On-Site",
+      "stipendOrSalary": "₹45,000 / month",
+      "duration": "4 Months",
+      "postedDate": "5 days ago",
+      "deadline": "30 March 2026",
+      "applicantsCount": 40,
+      "featured": false,
+      "description": "Collaborate with faculty leads and automotive engineers on real-time Battery Management System (BMS) telemetry and CAN-bus telemetry visualizers.",
+      "responsibilities": [
+        "Implement real-time sensor processing pipelines in C++ and Python",
+        "Build web-based telemetry HUD for simulated drive tests",
+        "Conduct hardware-in-the-loop (HIL) safety testing"
+      ],
+      "requiredSkills": [
+        {
+          "name": "Full-Stack Dev",
+          "weight": 25
+        },
+        {
+          "name": "DSA & Algorithms",
+          "weight": 35
+        },
+        {
+          "name": "System Architecture",
+          "weight": 30
+        },
+        {
+          "name": "Soft Skills & Collab",
+          "weight": 10
+        }
+      ],
+      "preferredSkills": [
+        "C++",
+        "IoT protocols",
+        "MQTT",
+        "WebSockets"
+      ],
+      "eligibility": "CSE, ECE, Electrical, or Mechanical Engineering students"
+    },
+    {
+      "id": "job-5",
+      "title": "Cloud Security & DevSecOps Engineer",
+      "company": "Infosys Industry 4.0 Lab",
+      "companyLogo": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=120&auto=format&fit=crop&q=80",
+      "location": "Remote (India-wide)",
+      "type": "Full-Time",
+      "workplace": "Remote",
+      "stipendOrSalary": "₹9.5 LPA - ₹14 LPA",
+      "postedDate": "3 days ago",
+      "deadline": "10 April 2026",
+      "applicantsCount": 180,
+      "featured": true,
+      "description": "Entry-level full-time position for graduates with verified cloud competencies. Oversee continuous compliance, container security scanning, and automated IAM policies.",
+      "responsibilities": [
+        "Implement automated security checks in GitHub Actions CI/CD",
+        "Audit AWS/Azure workloads against CIS benchmarks",
+        "Remediate vulnerabilities alongside application dev teams"
+      ],
+      "requiredSkills": [
+        {
+          "name": "Cloud & DevOps",
+          "weight": 40
+        },
+        {
+          "name": "System Architecture",
+          "weight": 25
+        },
+        {
+          "name": "Full-Stack Dev",
+          "weight": 20
+        },
+        {
+          "name": "Soft Skills & Collab",
+          "weight": 15
+        }
+      ],
+      "preferredSkills": [
+        "SonarQube",
+        "Trivy",
+        "Kubernetes",
+        "Linux internals"
+      ],
+      "eligibility": "Graduating batch 2025/2026"
+    }
+  ],
+  "applications": [
+    {
+      "id": "app-1788540088703",
+      "jobId": "job-4",
+      "jobTitle": "Autonomous Systems & Embedded Software Intern",
+      "company": "Tata Motors EV Tech Hub",
+      "companyLogo": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=120&auto=format&fit=crop&q=80",
+      "studentId": "stu-001",
+      "studentName": "Sakshi Sharma",
+      "appliedDate": "Just now",
+      "status": "Applied",
+      "fitScore": 82,
+      "nextStep": "Application submitted to company HR screening pipeline."
+    },
+    {
+      "id": "app-1",
+      "jobId": "job-1",
+      "jobTitle": "Cloud Platform & Distributed Systems Intern",
+      "company": "Cisco Systems",
+      "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+      "studentId": "stu-001",
+      "studentName": "Sakshi Sharma",
+      "appliedDate": "28 Feb 2026",
+      "status": "Technical Round",
+      "fitScore": 92,
+      "nextStep": "Live System Design & Concurrency Coding on March 8",
+      "feedback": "High aptitude score in Algorithms and strong OpenTelemetry open source contributions."
+    },
+    {
+      "id": "app-2",
+      "jobId": "job-2",
+      "jobTitle": "AI & Full-Stack Solutions Engineer",
+      "company": "NVIDIA AI Innovation Labs",
+      "companyLogo": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=120&auto=format&fit=crop&q=80",
+      "studentId": "stu-001",
+      "studentName": "Sakshi Sharma",
+      "appliedDate": "01 Mar 2026",
+      "status": "Shortlisted",
+      "fitScore": 88,
+      "nextStep": "Resume and GitHub portfolio under review by Research Lead",
+      "feedback": "Impressive DocuMind RAG project implementation."
+    },
+    {
+      "id": "app-3",
+      "jobId": "job-3",
+      "jobTitle": "Fintech Backend & Systems Apprentice",
+      "company": "Razorpay",
+      "companyLogo": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=120&auto=format&fit=crop&q=80",
+      "studentId": "stu-001",
+      "studentName": "Sakshi Sharma",
+      "appliedDate": "24 Feb 2026",
+      "status": "Interview",
+      "fitScore": 94,
+      "nextStep": "Hiring Manager Behavioral & Cultural Fit round scheduled",
+      "feedback": "Past internship mentor feedback verified by platform."
+    }
+  ],
+  "roadmapItems": [
+    {
+      "id": "road-1",
+      "title": "Cloud Infrastructure & Kubernetes Deep Dive",
+      "type": "certification",
+      "provider": "CNCF & Linux Foundation",
+      "duration": "3 Weeks (15 hrs)",
+      "targetSkill": "Cloud & DevOps",
+      "gapClosedPoints": 18,
+      "difficulty": "Intermediate",
+      "linkUrl": "https://kubernetes.io/training",
+      "status": "in_progress"
+    },
+    {
+      "id": "road-2",
+      "title": "Distributed Systems & Consensus Protocols (Raft, Paxos)",
+      "type": "course",
+      "provider": "Industry Mentors from Google & Microsoft",
+      "duration": "4 Weeks (20 hrs)",
+      "targetSkill": "System Architecture",
+      "gapClosedPoints": 22,
+      "difficulty": "Advanced",
+      "linkUrl": "https://distributed-systems.org",
+      "status": "recommended"
+    },
+    {
+      "id": "road-3",
+      "title": "Build a Live High-Throughput Event Streaming Pipeline",
+      "type": "project",
+      "provider": "AyurSetu Industry Collaboration Lab",
+      "duration": "2 Weeks (Hands-on Capstone)",
+      "targetSkill": "Cloud & DevOps",
+      "gapClosedPoints": 14,
+      "difficulty": "Advanced",
+      "status": "recommended"
+    },
+    {
+      "id": "road-4",
+      "title": "Distributed Backend Engineering Internship",
+      "type": "internship",
+      "provider": "Razorpay / Cisco Systems",
+      "duration": "6 Months",
+      "targetSkill": "System Architecture",
+      "gapClosedPoints": 30,
+      "difficulty": "Advanced",
+      "status": "recommended"
+    }
+  ],
+  "learningPrograms": [
+    {
+      "id": "prog-1",
+      "title": "Enterprise Distributed Systems & High-Scale Microservices",
+      "offeredBy": "Google Cloud & IIT Madras Joint Initiative",
+      "partnerLogo": "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=120&auto=format&fit=crop&q=80",
+      "instructor": "Dr. R. Sundaram (IIT-M) & S. Patel (Principal Architect, Google)",
+      "skillsTaught": [
+        "System Design",
+        "gRPC",
+        "Distributed Consensus",
+        "Kafka",
+        "Redis Sharding"
+      ],
+      "duration": "6 Weeks (Self-paced + Live Labs)",
+      "level": "Advanced",
+      "rating": 4.9,
+      "reviewsCount": 1420,
+      "enrolledCount": 3840,
+      "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop&q=80",
+      "type": "Industry Certification",
+      "isIndustryEndorsed": true,
+      "scholarshipAvailable": true,
+      "description": "Learn real-world architecture patterns directly from engineers maintaining hyper-scale production systems. Includes 5 hands-on AWS/GCP sandbox labs.",
+      "syllabus": [
+        {
+          "week": 1,
+          "title": "Foundations of Distributed State",
+          "topics": [
+            "CAP Theorem trade-offs",
+            "Consistent Hashing",
+            "Vector Clocks"
+          ]
+        },
+        {
+          "week": 2,
+          "title": "Event-Driven Microservices",
+          "topics": [
+            "Kafka architecture",
+            "Idempotency patterns",
+            "Saga orchestrations"
+          ]
+        },
+        {
+          "week": 3,
+          "title": "High Availability & Fault Tolerance",
+          "topics": [
+            "Circuit Breakers",
+            "Bulkheads",
+            "Graceful degradation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prog-2",
+      "title": "Production Kubernetes & Cloud-Native DevOps Bootcamp",
+      "offeredBy": "Cisco Systems & Linux Foundation",
+      "partnerLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+      "instructor": "A. Narang (Cloud Lead, Cisco)",
+      "skillsTaught": [
+        "Kubernetes",
+        "Docker",
+        "Helm",
+        "CI/CD Pipelines",
+        "Prometheus"
+      ],
+      "duration": "4 Weeks",
+      "level": "Intermediate",
+      "rating": 4.8,
+      "reviewsCount": 980,
+      "enrolledCount": 2950,
+      "thumbnail": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&auto=format&fit=crop&q=80",
+      "type": "Bootcamp",
+      "isIndustryEndorsed": true,
+      "scholarshipAvailable": true,
+      "description": "Master container orchestration, automated canary rollouts, ingress controllers, and secrets management in enterprise Kubernetes clusters.",
+      "syllabus": [
+        {
+          "week": 1,
+          "title": "Container Fundamentals to Pod Lifecycle",
+          "topics": [
+            "Cgroups & Namespaces",
+            "Multi-stage builds",
+            "Init containers"
+          ]
+        },
+        {
+          "week": 2,
+          "title": "Networking & Ingress Control",
+          "topics": [
+            "CNI plugins",
+            "Ingress NGINX",
+            "Cert-manager TLS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prog-3",
+      "title": "Generative AI & Agentic Workflows for Developers",
+      "offeredBy": "NVIDIA Deep Learning Institute",
+      "partnerLogo": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=120&auto=format&fit=crop&q=80",
+      "instructor": "Elena Rostova (AI Researcher, NVIDIA)",
+      "skillsTaught": [
+        "LLM Fine-Tuning",
+        "LangChain",
+        "Vector DBs",
+        "RAG",
+        "Agent Architectures"
+      ],
+      "duration": "5 Weeks",
+      "level": "Intermediate",
+      "rating": 4.95,
+      "reviewsCount": 2100,
+      "enrolledCount": 5400,
+      "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&auto=format&fit=crop&q=80",
+      "type": "Industry Certification",
+      "isIndustryEndorsed": true,
+      "scholarshipAvailable": false,
+      "description": "Deep dive into building multi-agent AI applications, vector search optimizations, and small language model (SLM) on-premise deployments.",
+      "syllabus": [
+        {
+          "week": 1,
+          "title": "RAG Architecture Mastery",
+          "topics": [
+            "Chunking strategies",
+            "Hybrid vector retrieval",
+            "Re-ranking algorithms"
+          ]
+        },
+        {
+          "week": 2,
+          "title": "Autonomous Multi-Agent Systems",
+          "topics": [
+            "Tool calling",
+            "Reflection loops",
+            "Stateful graph orchestration"
+          ]
+        }
+      ]
+    }
+  ],
+  "facultyOpportunities": [
+    {
+      "id": "fac-1",
+      "title": "Industry Immersion & Sabbatical Fellowship on 5G/6G Networks",
+      "hostCompany": "Intel Research & Qualcomm Lab",
+      "type": "Faculty Internship",
+      "domain": "Telecommunications & Embedded Systems",
+      "duration": "2 to 6 Months (Flexible sabbatical)",
+      "stipendOrGrant": "₹1,50,000 / month + Lab Research Budget",
+      "location": "Bangalore Tech Center / Hybrid",
+      "description": "Work alongside Intel Principal Engineers on next-gen OpenRAN architecture, edge computing, and real-time beamforming algorithms.",
+      "requirements": [
+        "Faculty in ECE/CSE with minimum 3 years teaching/research experience",
+        "Knowledge of wireless networks or signal processing"
+      ],
+      "deadline": "15 April 2026",
+      "applicantsCount": 18,
+      "openings": 4
+    },
+    {
+      "id": "fac-2",
+      "title": "National Faculty Development Program (FDP) on Generative AI in Curriculum",
+      "hostCompany": "Microsoft India & AICTE Initiative",
+      "type": "FDP",
+      "domain": "Computer Science & AI",
+      "duration": "2 Weeks (Intensive Hybrid)",
+      "stipendOrGrant": "Fully Sponsored + ₹30,000 Travel Grant",
+      "location": "Microsoft Technology Center, Gurgaon & Online",
+      "description": "Equip engineering faculty with pedagogy, hands-on cloud credits, and ready-to-teach course syllabi for Generative AI, RAG, and Agentic Software Engineering.",
+      "requirements": [
+        "Open to all University and College Professors / Associate Professors"
+      ],
+      "deadline": "28 March 2026",
+      "applicantsCount": 142,
+      "openings": 50
+    },
+    {
+      "id": "fac-3",
+      "title": "Joint Industry-Academia Autonomous Drone Swarm Research Grant",
+      "hostCompany": "DRDO & Tata Advanced Systems",
+      "type": "Research Grant",
+      "domain": "Robotics, AI & Control Systems",
+      "duration": "18 Months",
+      "stipendOrGrant": "₹45,00,000 Total Project Grant",
+      "location": "University Campus + Tata Field Testing Site",
+      "description": "Collaborative sponsored research proposal seeking academic co-principal investigators to develop decentralized mesh communications for autonomous drone swarms.",
+      "requirements": [
+        "PhD in relevant discipline",
+        "Prior publications in robotics or networking"
+      ],
+      "deadline": "30 April 2026",
+      "applicantsCount": 9,
+      "openings": 2
+    }
+  ],
+  "curriculumInsights": [
+    {
+      "domain": "Cloud-Native & Distributed Systems",
+      "industryDemandGrowth": 48,
+      "academicCoverageScore": 42,
+      "gapSeverity": "High",
+      "inDemandTechnologies": [
+        "Kubernetes CRDs",
+        "Service Mesh (Istio)",
+        "Go Microservices",
+        "Distributed Tracing (OpenTelemetry)"
+      ],
+      "suggestedCurriculumModules": [
+        "Replace monolithic Java RMI labs with Go + gRPC microservice projects",
+        "Add container lifecycle and cloud orchestration practicals in Operating Systems / Networks curriculum"
+      ]
+    },
+    {
+      "domain": "Generative AI & Agentic Systems",
+      "industryDemandGrowth": 92,
+      "academicCoverageScore": 35,
+      "gapSeverity": "High",
+      "inDemandTechnologies": [
+        "Vector Databases (pgvector/Pinecone)",
+        "RAG Pipelines",
+        "LangGraph / Agent Frameworks",
+        "Model Evaluation & Safety"
+      ],
+      "suggestedCurriculumModules": [
+        "Upgrade traditional Artificial Intelligence course to cover Modern Transformer Architectures & Vector Search",
+        "Introduce Capstone projects with live LLM API integration and hallucination evaluation"
+      ]
+    },
+    {
+      "domain": "Modern Full-Stack Engineering",
+      "industryDemandGrowth": 35,
+      "academicCoverageScore": 65,
+      "gapSeverity": "Moderate",
+      "inDemandTechnologies": [
+        "Next.js / React 19",
+        "TypeScript Strict Mode",
+        "Serverless & Edge Functions",
+        "Tailwind & Modern CSS"
+      ],
+      "suggestedCurriculumModules": [
+        "Transition Web Technology syllabus from legacy HTML4/PHP to React, TypeScript, and modern REST/GraphQL APIs"
+      ]
+    },
+    {
+      "domain": "Cybersecurity & DevSecOps",
+      "industryDemandGrowth": 41,
+      "academicCoverageScore": 50,
+      "gapSeverity": "Moderate",
+      "inDemandTechnologies": [
+        "CI/CD Pipeline Security",
+        "Zero Trust Architecture",
+        "Cloud IAM Policy Automation",
+        "SAST / DAST Tools"
+      ],
+      "suggestedCurriculumModules": [
+        "Integrate container vulnerability scanning directly into college coding labs and submission portals"
+      ]
+    }
+  ],
+  "institutionalMetrics": {
+    "totalStudents": 3420,
+    "placementReadinessRate": 84.6,
+    "activeIndustryPartners": 78,
+    "internshipsSecuredThisYear": 892,
+    "avgSkillGapClosedPct": 68.4,
+    "departmentReadiness": [
+      {
+        "dept": "Computer Science & Eng.",
+        "studentCount": 720,
+        "readinessScore": 88,
+        "topGapSkill": "Distributed Systems",
+        "topStrength": "DSA & Full-Stack"
+      },
+      {
+        "dept": "Information Technology",
+        "studentCount": 540,
+        "readinessScore": 84,
+        "topGapSkill": "Cloud & DevOps",
+        "topStrength": "Web & Mobile Dev"
+      },
+      {
+        "dept": "Electronics & Comm.",
+        "studentCount": 680,
+        "readinessScore": 78,
+        "topGapSkill": "Embedded AI / Edge",
+        "topStrength": "Signal & Hardware"
+      },
+      {
+        "dept": "Mechanical Engineering",
+        "studentCount": 620,
+        "readinessScore": 72,
+        "topGapSkill": "Industrial IoT & CAD Scripting",
+        "topStrength": "Design & Thermodynamics"
+      },
+      {
+        "dept": "Electrical Engineering",
+        "studentCount": 460,
+        "readinessScore": 76,
+        "topGapSkill": "Smart Grid EV Telemetry",
+        "topStrength": "Power Systems"
+      },
+      {
+        "dept": "Civil Engineering",
+        "studentCount": 400,
+        "readinessScore": 69,
+        "topGapSkill": "BIM & Geospatial Analytics",
+        "topStrength": "Structural Mechanics"
+      }
+    ],
+    "monthlyPlacementTrend": [
+      {
+        "month": "Sep 2025",
+        "placed": 95,
+        "target": 80
+      },
+      {
+        "month": "Oct 2025",
+        "placed": 180,
+        "target": 160
+      },
+      {
+        "month": "Nov 2025",
+        "placed": 310,
+        "target": 280
+      },
+      {
+        "month": "Dec 2025",
+        "placed": 490,
+        "target": 450
+      },
+      {
+        "month": "Jan 2026",
+        "placed": 680,
+        "target": 620
+      },
+      {
+        "month": "Feb 2026",
+        "placed": 892,
+        "target": 800
+      }
+    ],
+    "hiringDomainBreakdown": [
+      {
+        "domain": "Cloud & Distributed Systems",
+        "percentage": 34,
+        "color": "#3b82f6"
+      },
+      {
+        "domain": "AI & Data Engineering",
+        "percentage": 28,
+        "color": "#8b5cf6"
+      },
+      {
+        "domain": "Full-Stack Software",
+        "percentage": 22,
+        "color": "#10b981"
+      },
+      {
+        "domain": "Core Engineering & IoT",
+        "percentage": 11,
+        "color": "#f59e0b"
+      },
+      {
+        "domain": "Cybersecurity",
+        "percentage": 5,
+        "color": "#ef4444"
+      }
+    ]
+  },
+  "assessmentQuestions": [
+    {
+      "id": "q1",
+      "category": "System Design",
+      "question": "You are designing a high-throughput notification dispatch engine for 50 million active users. Peak load reaches 120,000 push messages per second. Which architecture ensures lowest latency and prevents downstream APNs/FCM rate-limit cascading failures?",
+      "codeSnippet": "// Proposed Architecture flow:\nAPI Gateway -> [?] -> Worker Consumer Pool -> Circuit Breaker -> Apple/Google Push",
+      "options": [
+        {
+          "text": "Synchronous REST calls directly from API Gateway with exponential thread pools",
+          "scoreWeight": 20
+        },
+        {
+          "text": "Distributed Message Broker (Kafka / RabbitMQ) with Token Bucket rate limiters & Dead Letter Queues (DLQs)",
+          "scoreWeight": 100
+        },
+        {
+          "text": "Single relational SQL database queue polled via cron job every 5 seconds",
+          "scoreWeight": 35
+        },
+        {
+          "text": "Redis PUB/SUB without persistent log storage or backpressure buffering",
+          "scoreWeight": 60
+        }
+      ],
+      "explanation": "Distributed message queues (Kafka) paired with partitioned consumer groups and token-bucket circuit breakers decouple high-velocity ingestion from third-party vendor rate limits while guaranteeing at-least-once delivery."
+    },
+    {
+      "id": "q2",
+      "category": "Full-Stack Development",
+      "question": "In a React 18 / Next.js application experiencing laggy re-renders during high-frequency real-time stock ticker updates, which optimization delivers the best UX without unnecessary CPU cycles?",
+      "options": [
+        {
+          "text": "Wrap every single JSX element in React.memo and disable strict mode",
+          "scoreWeight": 30
+        },
+        {
+          "text": "Use useTransition or useDeferredValue combined with selective state sub-slices (Zustand / signals)",
+          "scoreWeight": 100
+        },
+        {
+          "text": "Force all updates through document.getElementById manipulation in useEffect",
+          "scoreWeight": 15
+        },
+        {
+          "text": "Store ticker feed in global Redux store without reselect memoization",
+          "scoreWeight": 45
+        }
+      ],
+      "explanation": "React 18 concurrent features (useTransition/useDeferredValue) allow critical UI interactions (clicks, scrolling) to interrupt background ticker render updates, preventing thread starvation."
+    },
+    {
+      "id": "q3",
+      "category": "Cloud & DevOps",
+      "question": "When deploying a multi-region containerized microservice on Kubernetes requiring zero-downtime rollouts and canary traffic splitting (90% stable, 10% canary), which strategy is industry standard?",
+      "options": [
+        {
+          "text": "Recreate deployment strategy where old pods are killed simultaneously before new ones start",
+          "scoreWeight": 10
+        },
+        {
+          "text": "Service Mesh (Istio/Linkerd) or Argo Rollouts using automated metric analysis (error rates, p99 latency)",
+          "scoreWeight": 100
+        },
+        {
+          "text": "Manually altering DNS A-records in Route53 with 60-second TTLs during maintenance hours",
+          "scoreWeight": 40
+        },
+        {
+          "text": "SSH into each node and run docker run -p 80:80 latest_image",
+          "scoreWeight": 5
+        }
+      ],
+      "explanation": "Argo Rollouts and modern Service Meshes provide progressive delivery with automated canary analysis that rolls back instantaneously if error thresholds or latency SLIs breach safe limits."
+    },
+    {
+      "id": "q4",
+      "category": "Data Structures & Algorithms",
+      "question": "You need to find the Top-K most frequently searched keywords across a streaming log of billions of search queries with constrained memory (O(K) space complexity). Which data structure combination is most optimal?",
+      "options": [
+        {
+          "text": "Sort the entire array of queries in-place using Quicksort O(N log N)",
+          "scoreWeight": 25
+        },
+        {
+          "text": "Count-Min Sketch probabilistic frequency estimator coupled with a Min-Heap of size K",
+          "scoreWeight": 100
+        },
+        {
+          "text": "Nested For-Loops with an adjacency matrix",
+          "scoreWeight": 5
+        },
+        {
+          "text": "Binary Search Tree storing every distinct string in memory",
+          "scoreWeight": 50
+        }
+      ],
+      "explanation": "Count-Min Sketch provides bounded probabilistic frequency estimates in sub-linear space, while a Min-Heap of size K efficiently maintains the top elements in O(log K) insertion time."
+    },
+    {
+      "id": "q5",
+      "category": "AI & Data Engineering",
+      "question": "When implementing a Retrieval-Augmented Generation (RAG) pipeline on proprietary technical manuals, users complain about vague answers for specific API parameters. What technique best mitigates this?",
+      "options": [
+        {
+          "text": "Increase the LLM temperature to 1.0 to encourage creativity",
+          "scoreWeight": 10
+        },
+        {
+          "text": "Hybrid Search (BM25 keyword search + Dense Vector embedding) with Reciprocal Rank Fusion (RRF) and Cohere re-ranking",
+          "scoreWeight": 100
+        },
+        {
+          "text": "Feed the entire 50,000-page PDF into a single system prompt",
+          "scoreWeight": 20
+        },
+        {
+          "text": "Disable vector embeddings and use simple string.includes()",
+          "scoreWeight": 25
+        }
+      ],
+      "explanation": "Hybrid search combines exact lexical matching (essential for API names, acronyms, and error codes) with semantic vector search, followed by cross-encoder re-ranking for pinpoint accuracy."
+    },
+    {
+      "id": "q6",
+      "category": "Professional Communication",
+      "question": "During a cross-functional sprint, an industry product manager introduces a critical requirement change 2 days before release that threatens the team SLA. What is the most constructive response?",
+      "options": [
+        {
+          "text": "Ignore the message and deploy the original code silently",
+          "scoreWeight": 0
+        },
+        {
+          "text": "Quantify trade-offs with data, propose a phased scope (MVP for deadline + Phase 2 patch), and align all stakeholders transparently",
+          "scoreWeight": 100
+        },
+        {
+          "text": "Complain publicly in the all-hands channel about lack of planning",
+          "scoreWeight": 15
+        },
+        {
+          "text": "Accept without questions and work 48 hours without sleep to deliver low-quality code",
+          "scoreWeight": 35
+        }
+      ],
+      "explanation": "High-performing engineers present objective impact assessments, offer viable compromise paths (phased rollouts), and establish clear alignment without compromising system stability."
+    }
+  ],
+  "industryCandidates": [
+    {
+      "id": "cand-1",
+      "name": "Sakshi Sharma",
+      "college": "National Institute of Technology",
+      "roleTarget": "Cloud & Distributed Systems Intern",
+      "skillFitPercentage": 94,
+      "cgpa": 8.84,
+      "skills": [
+        "React",
+        "Go",
+        "Kubernetes",
+        "DSA",
+        "OpenTelemetry"
+      ],
+      "status": "Applied to Cisco Systems",
+      "assessmentScore": 92,
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80",
+      "verifiedBadges": [
+        "Top 5% Score",
+        "AICTE Verified"
+      ]
+    },
+    {
+      "id": "cand-2",
+      "name": "Pooja Venkatesh",
+      "college": "Indian Institute of Information Technology",
+      "roleTarget": "AI & Full-Stack Solutions Engineer",
+      "skillFitPercentage": 91,
+      "cgpa": 9.12,
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Next.js",
+        "FastAPI",
+        "LangChain"
+      ],
+      "status": "Shortlisted",
+      "assessmentScore": 89,
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=120&auto=format&fit=crop&q=80",
+      "verifiedBadges": [
+        "NVIDIA DLI Certified",
+        "Published Paper"
+      ]
+    },
+    {
+      "id": "cand-3",
+      "name": "Rohan Deshmukh",
+      "college": "BITS Pilani",
+      "roleTarget": "Fintech Backend Apprentice",
+      "skillFitPercentage": 87,
+      "cgpa": 8.45,
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "Kafka",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "status": "Under Review",
+      "assessmentScore": 85,
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=80",
+      "verifiedBadges": [
+        "AWS Certified",
+        "Hackathon Winner"
+      ]
+    },
+    {
+      "id": "cand-4",
+      "name": "Ananya Iyer",
+      "college": "Delhi Technological University",
+      "roleTarget": "Cloud Security & DevSecOps",
+      "skillFitPercentage": 86,
+      "cgpa": 8.78,
+      "skills": [
+        "Kubernetes",
+        "Terraform",
+        "CI/CD",
+        "Linux",
+        "Go"
+      ],
+      "status": "Applied",
+      "assessmentScore": 84,
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80",
+      "verifiedBadges": [
+        "Linux Foundation Certified"
+      ]
+    }
+  ]
+}
