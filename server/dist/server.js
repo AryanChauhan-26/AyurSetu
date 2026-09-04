@@ -39,7 +39,7 @@ app.use((err, _req, res, _next) => {
         message: err.message || 'An unexpected error occurred'
     });
 });
-app.listen(PORT, () => {
+app.listen(Number(PORT), '0.0.0.0', () => {
     console.log(`=========================================`);
     console.log(` AyurSetu Backend API Server running!`);
     console.log(` Port:    http://localhost:${PORT}`);

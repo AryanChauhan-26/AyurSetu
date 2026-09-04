@@ -175,7 +175,7 @@ export const Navbar: React.FC = () => {
                   <span className="font-extrabold text-base sm:text-lg tracking-tight text-blue-950 leading-tight">
                     Ayur<span className="text-amber-700">Setu</span>
                   </span>
-                  <span className="text-[9px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-blue-50 text-blue-900 border border-blue-200">
+                  <span className="text-[9px] uppercase font-bold tracking-wider whitespace-nowrap px-1.5 py-0.5 rounded bg-blue-50 text-blue-900 border border-blue-200">
                     GOVT OF INDIA
                   </span>
                 </div>
@@ -200,7 +200,7 @@ export const Navbar: React.FC = () => {
                     }`}
                   >
                     {item.icon}
-                    <span>{item.label}</span>
+                    <span className="whitespace-nowrap">{item.label}</span>
                     {item.badge && (
                       <span className="text-[9px] font-extrabold px-1.5 py-0.2 rounded bg-amber-100 text-amber-900 border border-amber-300">
                         {item.badge}

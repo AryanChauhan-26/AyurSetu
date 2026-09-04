@@ -2,20 +2,19 @@ import React from 'react';
 import { useApp } from '../../context/AppContext';
 import { StakeholderTriad } from './StakeholderTriad';
 import { QuickGapDemo } from './QuickGapDemo';
-import { 
-  GraduationCap, 
-  Building2, 
-  Briefcase, 
-  ShieldCheck, 
-  Sparkles, 
-  ArrowRight, 
-  CheckCircle2, 
-  XCircle, 
-  TrendingUp, 
-  Award, 
-  Users, 
-  Layers, 
-  Zap 
+import {
+  GraduationCap,
+  Building2,
+  Briefcase,
+  ShieldCheck,
+  Sparkles,
+  ArrowRight,
+  CheckCircle2,
+  XCircle,
+  Zap,
+  Target,
+  Shield,
+  LineChart
 } from 'lucide-react';
 import { UserRole } from '../../types';
 
@@ -30,32 +29,28 @@ export const HeroSection: React.FC = () => {
   return (
     <div className="space-y-16 py-6 sm:py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       {/* Hero Header */}
-      <div className="text-center space-y-6 max-w-4xl mx-auto pt-4 sm:pt-6">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-xs sm:text-sm font-semibold text-blue-900 shadow-2xs">
-          <Sparkles className="w-4 h-4 text-amber-600 animate-spin" style={{ animationDuration: '6s' }} />
-          <span>Smart India Hackathon 2026 • Ministry of Education & AICTE Initiative</span>
-        </div>
+      <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-16 items-center pt-4 sm:pt-8">
+        <div className="space-y-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-xs font-semibold text-blue-900">
+            <Sparkles className="w-4 h-4 text-amber-600" />
+            <span>National skill intelligence network · SIH 2026</span>
+          </div>
 
-        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-blue-950 leading-[1.18]">
-          AyurSetu: One National Portal. <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 via-indigo-800 to-amber-700">
-            Three Stakeholders. Zero Skill Gaps.
-          </span>
-        </h1>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-blue-950 leading-[1.08]">
+            Turn learning into <span className="text-amber-700">proof.</span>
+          </h1>
 
-        <p className="text-sm sm:text-lg text-slate-700 max-w-3xl mx-auto leading-relaxed">
-          The centralized Government framework connecting <strong>students, industries, and academicians</strong> across India. 
-          Bridge the academic curriculum with real-world enterprise requirements through standardized skill assessment, verified credentials, and internship pipelines.
-        </p>
+          <p className="text-base sm:text-lg text-slate-700 max-w-2xl leading-relaxed">
+            AyurSetu connects student capability, industry demand, and academic action in one trusted workflow. Find the gap, close it, and show employers what you can do.
+          </p>
 
-        {/* Hero CTAs */}
-        <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+          <div className="flex flex-wrap items-center gap-3 pt-2">
           <button
             onClick={() => {
               setRole('student');
               setPage('assessment');
             }}
-            className="px-7 py-3.5 rounded-xl bg-blue-900 hover:bg-blue-800 text-white font-bold text-sm shadow-md flex items-center gap-2.5 transition-all hover:scale-102"
+            className="px-6 py-3.5 rounded-xl bg-blue-900 hover:bg-blue-800 text-white font-bold text-sm shadow-md flex items-center gap-2.5 transition-all hover:-translate-y-0.5"
           >
             <Zap className="w-4 h-4 text-amber-400" />
             <span>Launch Skill Assessment Engine</span>
@@ -64,32 +59,50 @@ export const HeroSection: React.FC = () => {
           
           <button
             onClick={() => setPage('jobs')}
-            className="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 font-semibold text-sm flex items-center gap-2 transition-all shadow-xs"
+            className="px-5 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 font-semibold text-sm flex items-center gap-2 transition-all shadow-xs"
           >
             <Briefcase className="w-4 h-4 text-amber-600" />
             <span>Browse National Internship Board</span>
           </button>
+          </div>
+
+          <div className="flex flex-wrap gap-x-6 gap-y-2 pt-4 text-xs font-semibold text-slate-500">
+            <span className="inline-flex items-center gap-1.5"><ShieldCheck className="w-4 h-4 text-emerald-700" /> Verified credentials</span>
+            <span className="inline-flex items-center gap-1.5"><Target className="w-4 h-4 text-amber-700" /> Industry benchmarks</span>
+            <span className="inline-flex items-center gap-1.5"><LineChart className="w-4 h-4 text-blue-700" /> Live readiness score</span>
+          </div>
         </div>
 
-        {/* Highlight Stats Row */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 border-t border-slate-200/90 text-left">
-          <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-xs">
-            <div className="text-2xl font-extrabold text-blue-950">84.6%</div>
-            <div className="text-xs text-slate-600 font-medium mt-0.5">National Placement Readiness</div>
-          </div>
-          <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-xs">
-            <div className="text-2xl font-extrabold text-blue-800">5,000+</div>
-            <div className="text-xs text-slate-600 font-medium mt-0.5">Assessed Student Profiles</div>
-          </div>
-          <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-xs">
-            <div className="text-2xl font-extrabold text-amber-700">350+</div>
-            <div className="text-xs text-slate-600 font-medium mt-0.5">Partner Tech Enterprises</div>
-          </div>
-          <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-xs">
-            <div className="text-2xl font-extrabold text-emerald-700">-68.4%</div>
-            <div className="text-xs text-slate-600 font-medium mt-0.5">Skill Gap Reduction Index</div>
+        <div className="relative rounded-[2rem] bg-blue-950 p-5 sm:p-7 shadow-xl overflow-hidden">
+          <div className="absolute -right-20 -top-20 w-56 h-56 rounded-full border-[24px] border-amber-400/20" />
+          <div className="absolute -left-16 -bottom-20 w-48 h-48 rounded-full border-[18px] border-emerald-400/15" />
+          <div className="relative space-y-5">
+            <div className="flex items-center justify-between text-xs text-blue-100">
+              <span className="font-semibold tracking-wide">STUDENT READINESS SNAPSHOT</span>
+              <span className="rounded-full bg-emerald-400/15 px-2.5 py-1 text-emerald-200">Updated today</span>
+            </div>
+            <div className="flex items-end gap-4">
+              <div className="text-6xl font-extrabold text-white leading-none">72</div>
+              <div className="pb-1 text-sm text-blue-200">/ 100<br /><span className="text-emerald-300 font-semibold">+14 this month</span></div>
+            </div>
+            <div className="h-2 rounded-full bg-blue-900 overflow-hidden"><div className="h-full w-[72%] rounded-full bg-gradient-to-r from-amber-400 to-emerald-400" /></div>
+            <div className="grid grid-cols-2 gap-3">
+              {['Cloud systems', 'Data fluency', 'Problem solving', 'Communication'].map((skill, index) => (
+                <div key={skill} className="rounded-xl bg-white/10 border border-white/10 p-3">
+                  <div className="flex items-center justify-between text-[11px] text-blue-100"><span>{skill}</span><span className="font-bold text-white">{[78, 64, 81, 66][index]}%</span></div>
+                  <div className="h-1 mt-2 rounded-full bg-blue-900"><div className="h-full rounded-full bg-amber-400" style={{ width: `${[78, 64, 81, 66][index]}%` }} /></div>
+                </div>
+              ))}
+            </div>
+            <div className="flex items-center gap-2 border-t border-white/10 pt-4 text-xs text-blue-100"><Shield className="w-4 h-4 text-emerald-300" /> Matched to 128 verified internship opportunities</div>
           </div>
         </div>
+      </div>
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-2 text-left">
+        {[['84.6%', 'Placement readiness'], ['5,000+', 'Assessed profiles'], ['350+', 'Partner enterprises'], ['-68.4%', 'Gap reduction index']].map(([value, label]) => (
+          <div key={label} className="p-4 rounded-xl bg-white border border-slate-200 shadow-xs"><div className="text-2xl font-extrabold text-blue-950">{value}</div><div className="text-xs text-slate-600 font-medium mt-0.5">{label}</div></div>
+        ))}
       </div>
 
       {/* 4 Role-Based Entry Points */}
