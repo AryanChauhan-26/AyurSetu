@@ -5,7 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233b82f6'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AyurSetu | National Student Skill & Internship Portal (SIH 2026)</title>
-    <meta name="description" content="AyurSetu: Official National Academia–Industry Collaboration Portal for Students, Industries, and Academicians. An Initiative under Ministry of Education & AICTE for SIH 2026." />
+    <!-- PWA & Mobile Web App Meta -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#1e3a8a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="AyurSetu" />
+    <link rel="apple-touch-icon" href="/icon-192.svg" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,5 +21,15 @@
   <body class="bg-[#f8fafc] text-slate-800 font-sans antialiased selection:bg-blue-600 selection:text-white">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Register PWA Service Worker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((reg) => console.log('AyurSetu PWA ServiceWorker registered with scope:', reg.scope))
+            .catch((err) => console.warn('AyurSetu ServiceWorker registration failed:', err));
+        });
+      }
+    </script>
   </body>
 </html>
