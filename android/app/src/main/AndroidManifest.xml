@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permissions for Backend Network Calls -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AyurSetu"
+        android:usesCleartextTraffic="true">
+
+        <!-- Launcher Dashboard Activity -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Jobs & Career Opportunities -->
+        <activity
+            android:name=".ui.JobsActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <!-- Skill Assessment & Readiness Engine -->
+        <activity
+            android:name=".ui.AssessmentActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <!-- Student Digital Portfolio & Skills -->
+        <activity
+            android:name=".ui.ProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <!-- Learning & Industry Upskilling Hub -->
+        <activity
+            android:name=".ui.LearningActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.MainActivity" />
+
+    </application>
+
+</manifest>
