@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AyurSetu Government Brand Palette -->
+    <color name="primary">#15803D</color>            <!-- Deep Forest Green -->
+    <color name="primary_dark">#166534</color>       <!-- Dark Green -->
+    <color name="primary_light">#DCFCE7</color>      <!-- Light Green Tint -->
+    <color name="secondary">#1E3A8A</color>          <!-- Ministry Navy Blue -->
+    <color name="accent_gold">#D97706</color>        <!-- Amber / Gold Accent -->
+
+    <!-- Neutrals & Surfaces -->
+    <color name="background">#F8FAFC</color>         <!-- Slate 50 -->
+    <color name="card_surface">#FFFFFF</color>
+    <color name="text_primary">#0F172A</color>       <!-- Slate 900 -->
+    <color name="text_secondary">#475569</color>     <!-- Slate 600 -->
+    <color name="text_muted">#94A3B8</color>         <!-- Slate 400 -->
+    <color name="divider">#E2E8F0</color>            <!-- Slate 200 -->
+
+    <!-- Status & Badges -->
+    <color name="success">#16A34A</color>
+    <color name="warning">#EAB308</color>
+    <color name="danger">#DC2626</color>
+    <color name="badge_bg">#EFF6FF</color>
+    <color name="white">#FFFFFF</color>
+</resources>
