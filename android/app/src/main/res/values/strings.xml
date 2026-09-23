@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">AyurSetu</string>
+    <string name="app_tagline">Bridging Ayush Education &amp; Industry</string>
+    <string name="sih_statement">SIH 2026 • Ministry of Ayush &amp; AIIA</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_jobs">Opportunities</string>
+    <string name="nav_assessment">Assessment</string>
+    <string name="nav_learning">Learning</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Dashboard -->
+    <string name="readiness_gauge_title">Industry Readiness Index</string>
+    <string name="readiness_gauge_desc">Based on verified benchmarks against leading Ayush &amp; Pharma standards.</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="action_take_test">Take Skill Benchmark</string>
+    <string name="action_view_jobs">Browse 40+ Openings</string>
+    <string name="action_explore_courses">Skill Up With Industry</string>
+    <string name="recent_opportunities">Featured Opportunities</string>
+    <string name="view_all">View All</string>
+
+    <!-- Assessment -->
+    <string name="assessment_title">Skill Benchmark Assessment</string>
+    <string name="assessment_subtitle">Diagnose your technical gaps against industry benchmarks (AYUSH-GCP, HPLC, ISO standards).</string>
+    <string name="submit_assessment">Submit &amp; Recalculate Index</string>
+
+    <!-- Jobs -->
+    <string name="search_jobs_hint">Search by title, skill (HPLC, GCP, GMP)...</string>
+    <string name="filter_all">All</string>
+    <string name="filter_internships">Internships</string>
+    <string name="filter_fulltime">Full-Time</string>
+    <string name="apply_now">Apply Now</string>
+    <string name="applied_success">Application submitted successfully to company HR!</string>
+
+    <!-- Profile -->
+    <string name="verified_student">Verified AyurSetu Scholar</string>
+    <string name="skills_title">Verified Competencies</string>
+    <string name="radar_title">Benchmark Radar Comparison</string>
+
+    <!-- Learning -->
+    <string name="learning_title">AyurSetu Skill Hub</string>
+    <string name="learning_subtitle">Industry-endorsed certifications and masterclasses to close your skill gaps.</string>
+    <string name="enroll_now">Enroll Free</string>
+    <string name="enrolled_success">Successfully enrolled! Added to your personalized roadmap.</string>
+</resources>
