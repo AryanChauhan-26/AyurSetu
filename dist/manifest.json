@@ -1,0 +1,39 @@
+{
+  "name": "AyurSetu - National Skill Bridge",
+  "short_name": "AyurSetu",
+  "description": "National Academia-Industry Collaboration Platform bridging Ayush education and industry demand.",
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "background_color": "#15803d",
+  "theme_color": "#1e3a8a",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "categories": ["education", "government", "career"],
+  "icons": [
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Skill Assessment",
+      "url": "/?page=assessment",
+      "description": "Take diagnostic benchmark test"
+    },
+    {
+      "name": "Internships & Jobs",
+      "url": "/?page=jobs",
+      "description": "Browse Ayush openings"
+    }
+  ]
+}
