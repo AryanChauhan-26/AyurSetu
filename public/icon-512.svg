@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15803d" />
+      <stop offset="60%" stop-color="#166534" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <linearGradient id="leaf512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80" />
+      <stop offset="100%" stop-color="#22c55e" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg512)" />
+  <circle cx="256" cy="256" r="170" fill="none" stroke="#fef08a" stroke-width="8" stroke-opacity="0.3" />
+  <!-- Stylized AyurSetu Leaf & Bridge Emblem -->
+  <path d="M256 100 C320 144 374 227 347 307 C326 368 256 400 256 400 C256 400 186 368 165 307 C138 227 192 144 256 100 Z" fill="url(#leaf512)" />
+  <path d="M256 130 L256 380" stroke="#15803d" stroke-width="9" stroke-linecap="round" />
+  <path d="M256 200 C288 192 310 208 320 224" fill="none" stroke="#15803d" stroke-width="7" stroke-linecap="round" />
+  <path d="M256 254 C224 246 202 262 192 278" fill="none" stroke="#15803d" stroke-width="7" stroke-linecap="round" />
+  <path d="M256 300 C288 292 310 308 318 320" fill="none" stroke="#15803d" stroke-width="7" stroke-linecap="round" />
+  <!-- Bridge Arch below -->
+  <path d="M130 395 Q256 342 382 395" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" />
+</svg>
