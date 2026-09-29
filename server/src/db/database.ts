@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import bcrypt from 'bcryptjs';
 import {
   StudentProfile,
   JobOpportunity,
@@ -10,7 +11,8 @@ import {
   FacultyOpportunity,
   CurriculumSkillInsight,
   InstitutionalMetrics,
-  AssessmentQuestion
+  AssessmentQuestion,
+  User
 } from '../types.js';
 import {
   INITIAL_STUDENT_PROFILE,
@@ -30,7 +32,60 @@ const __dirname = path.dirname(__filename);
 const DATA_DIR = path.resolve(__dirname, '../../data');
 const DB_FILE = path.resolve(DATA_DIR, 'store.json');
 
+// Default seeded users (passwords are 'password123')
+const DEFAULT_USERS: User[] = [
+  {
+    id: 'usr-student-001',
+    email: 'sakshi.sharma@tech.edu.in',
+    passwordHash: bcrypt.hashSync('password123', 8),
+    name: 'Sakshi Sharma',
+    role: 'student',
+    createdAt: new Date().toISOString()
+  },
+  {
+    id: 'usr-student-002',
+    email: 'student@ayursetu.gov.in',
+    passwordHash: bcrypt.hashSync('password123', 8),
+    name: 'AyurSetu Scholar',
+    role: 'student',
+    createdAt: new Date().toISOString()
+  },
+  {
+    id: 'usr-industry-001',
+    email: 'recruiter@dabur.com',
+    passwordHash: bcrypt.hashSync('password123', 8),
+    name: 'Dr. Vikram Malhotra (Dabur Research)',
+    role: 'industry',
+    createdAt: new Date().toISOString()
+  },
+  {
+    id: 'usr-industry-002',
+    email: 'industry@ayursetu.gov.in',
+    passwordHash: bcrypt.hashSync('password123', 8),
+    name: 'Industry Partner',
+    role: 'industry',
+    createdAt: new Date().toISOString()
+  },
+  {
+    id: 'usr-academician-001',
+    email: 'dean@aiia.gov.in',
+    passwordHash: bcrypt.hashSync('password123', 8),
+    name: 'Prof. Rajeshwari Joshi (AIIA)',
+    role: 'academician',
+    createdAt: new Date().toISOString()
+  },
+  {
+    id: 'usr-institution-001',
+    email: 'admin@ayursetu.gov.in',
+    passwordHash: bcrypt.hashSync('password123', 8),
+    name: 'Ministry of Ayush Administrator',
+    role: 'institution',
+    createdAt: new Date().toISOString()
+  }
+];
+
 export interface DatabaseSchema {
+  users: User[];
   studentProfile: StudentProfile;
   jobs: JobOpportunity[];
   applications: JobApplication[];
@@ -55,13 +110,19 @@ class Database {
     try {
       if (fs.existsSync(DB_FILE)) {
         const content = fs.readFileSync(DB_FILE, 'utf-8');
-        return JSON.parse(content);
+        const parsed = JSON.parse(content);
+        // Ensure users array exists in existing store
+        if (!parsed.users || !Array.isArray(parsed.users) || parsed.users.length === 0) {
+          parsed.users = DEFAULT_USERS;
+        }
+        return parsed;
       }
     } catch (err) {
       console.warn('Could not read existing database file, falling back to initial data:', err);
     }
 
     const initial: DatabaseSchema = {
+      users: DEFAULT_USERS,
       studentProfile: INITIAL_STUDENT_PROFILE,
       jobs: JOB_OPPORTUNITIES,
       applications: INITIAL_APPLICATIONS,
@@ -96,7 +157,34 @@ class Database {
     this.saveTimeout = setTimeout(() => {
       this.persist();
       this.saveTimeout = null;
-    }, 200);
+    }, 150);
+  }
+
+  // --- User Authentication methods ---
+  public findUserByEmail(email: string): User | undefined {
+    return this.data.users.find(u => u.email.toLowerCase() === email.toLowerCase().trim());
+  }
+
+  public findUserById(id: string): User | undefined {
+    return this.data.users.find(u => u.id === id);
+  }
+
+  public createUser(userData: { email: string; password: string; name: string; role: User['role'] }): User {
+    const newUser: User = {
+      id: `usr-${Date.now()}-${Math.floor(Math.random() * 1000)}`,
+      email: userData.email.toLowerCase().trim(),
+      passwordHash: bcrypt.hashSync(userData.password, 8),
+      name: userData.name,
+      role: userData.role,
+      createdAt: new Date().toISOString()
+    };
+    this.data.users.push(newUser);
+    this.save();
+    return newUser;
+  }
+
+  public getUsers(): Omit<User, 'passwordHash'>[] {
+    return this.data.users.map(({ passwordHash, ...user }) => user);
   }
 
   // --- Profile methods ---
@@ -129,6 +217,16 @@ class Database {
     this.data.jobs = [newJob, ...this.data.jobs];
     this.save();
     return newJob;
+  }
+
+  public deleteJob(id: string): boolean {
+    const prevLength = this.data.jobs.length;
+    this.data.jobs = this.data.jobs.filter(j => j.id !== id);
+    if (this.data.jobs.length !== prevLength) {
+      this.save();
+      return true;
+    }
+    return false;
   }
 
   // --- Applications methods ---
@@ -168,7 +266,6 @@ class Database {
     };
 
     this.data.applications = [newApp, ...this.data.applications];
-    // Increment applicant count on job
     job.applicantsCount += 1;
     this.save();
 
