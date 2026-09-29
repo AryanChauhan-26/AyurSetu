@@ -183,3 +183,12 @@ export interface InstitutionalMetrics {
   monthlyPlacementTrend: { month: string; placed: number; target: number }[];
   hiringDomainBreakdown: { domain: string; percentage: number; color: string }[];
 }
+
+export interface User {
+  id: string;
+  email: string;
+  passwordHash: string;
+  name: string;
+  role: UserRole;
+  createdAt: string;
+}
