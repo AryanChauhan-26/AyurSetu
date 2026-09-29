@@ -18,14 +18,17 @@ import {
   Building2, 
   ShieldCheck, 
   ArrowRight,
-  Zap
+  Zap,
+  Download
 } from 'lucide-react';
+import { InstallModal } from './InstallModal';
 
 export const Navbar: React.FC = () => {
   const { role, setRole, page, setPage, studentProfile, applications } = useApp();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showNotificationMenu, setShowNotificationMenu] = useState(false);
   const [showMoreMenu, setShowMoreMenu] = useState(false);
+  const [showInstallModal, setShowInstallModal] = useState(false);
   const moreMenuRef = useRef<HTMLDivElement>(null);
   const notifMenuRef = useRef<HTMLDivElement>(null);
 
@@ -250,7 +253,17 @@ export const Navbar: React.FC = () => {
             </nav>
 
             {/* Right: Quick Action, Notifications, User Persona */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2.5 sm:gap-3">
+              {/* Install App Quick Action */}
+              <button
+                onClick={() => setShowInstallModal(true)}
+                className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs shadow-xs hover:shadow transition-all hover:-translate-y-0.5 cursor-pointer"
+                title="Install AyurSetu App on Device"
+              >
+                <Download className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Install App</span>
+              </button>
+
               {/* Notification Bell */}
               <div className="relative" ref={notifMenuRef}>
                 <button
@@ -376,9 +389,31 @@ export const Navbar: React.FC = () => {
                 </button>
               ))}
             </div>
+
+            {/* Mobile Install App Button */}
+            <div className="pt-2 border-t border-slate-100 mt-2">
+              <button
+                onClick={() => {
+                  setShowInstallModal(true);
+                  setMobileMenuOpen(false);
+                }}
+                className="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-bold bg-emerald-50 text-emerald-900 border border-emerald-200 shadow-2xs cursor-pointer"
+              >
+                <div className="flex items-center gap-2.5">
+                  <Download className="w-4 h-4 text-emerald-700" />
+                  <span>Install AyurSetu App</span>
+                </div>
+                <span className="text-[10px] bg-emerald-200 text-emerald-900 px-2 py-0.5 rounded-full font-extrabold uppercase">
+                  Free
+                </span>
+              </button>
+            </div>
           </div>
         )}
       </div>
+
+      {/* Global PWA / App Installation Modal */}
+      <InstallModal isOpen={showInstallModal} onClose={() => setShowInstallModal(false)} />
     </header>
   );
 };

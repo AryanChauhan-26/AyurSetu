@@ -14,12 +14,15 @@ import {
   Zap,
   Target,
   Shield,
-  LineChart
+  LineChart,
+  Download
 } from 'lucide-react';
 import { UserRole } from '../../types';
+import { InstallModal } from '../common/InstallModal';
 
 export const HeroSection: React.FC = () => {
   const { setRole, setPage } = useApp();
+  const [showInstallModal, setShowInstallModal] = React.useState(false);
 
   const handleRoleSelect = (selectedRole: UserRole) => {
     setRole(selectedRole);
@@ -63,6 +66,14 @@ export const HeroSection: React.FC = () => {
           >
             <Briefcase className="w-4 h-4 text-amber-600" />
             <span>Browse National Internship Board</span>
+          </button>
+
+          <button
+            onClick={() => setShowInstallModal(true)}
+            className="px-5 py-3.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-sm flex items-center gap-2 transition-all shadow-md hover:-translate-y-0.5 cursor-pointer"
+          >
+            <Download className="w-4 h-4" />
+            <span>Install App</span>
           </button>
           </div>
 
@@ -280,6 +291,8 @@ export const HeroSection: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <InstallModal isOpen={showInstallModal} onClose={() => setShowInstallModal(false)} />
     </div>
   );
 };
